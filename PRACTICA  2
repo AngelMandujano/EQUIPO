@@ -1,0 +1,13 @@
+var total= 0;
+var num = 1;
+for(var i = 1; i < 100; i++){
+    if(num != 3){
+        console.log(i);
+        total = total + 1;
+        num++
+    }
+    else{
+        num =1;
+    }
+}
+console.log(total);
