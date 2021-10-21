@@ -1,0 +1,61 @@
+<script>
+var usuario = prompt("Cual es tunombre");
+var nombres = ["Pedro","Laura","Rodrigo","Paola","Cesar","Maria","Diego","Sarahi","Santiago","Luna",];
+var lugares = ["Mexico","Paris","Ecatepec","Londres","Tizayuca","Cuba","Puerto ballarta","Acapulco","USA","Ciudad de Mexico",];
+var transportes = ["Carro","Avion","Barco","Bicicleta","Combi","Autobuz","Patineta","Caminando","Limosina","Taxi",];
+var apellidoMaterno = ["Hernandez","Trujillo","Peñanieto","Gonzales","Diaz"];
+var edad = ["18","60"];
+
+console.log(usuario);
+
+for (var i = 0; i < 1; i++) {
+let humano = persona();
+console.log(humano);
+}
+function persona (){
+    let nombre = nombres[numeroAleatorio(0,nombres.length-1)];
+    let lugar = lugares[numeroAleatorio(0,lugares.length-1)];
+    let transporte = transportes[numeroAleatorio(0,transportes.length-1)];
+    let eda = numeroAleatorio(18,60);
+    if(numeroAleatorio(0,1)==0){
+        var sexoo = "Masculino"
+    }
+    else{
+        var sexo =  "Femenino";
+}
+
+let persona={
+    nombre:nombre,
+    lugar:lugar,
+    transporte:transporte,
+    edad:numeroAleatorio(18,60),
+    sexo: numeroAleatorio(0,1),
+    
+}
+return persona;
+}
+
+function numeroAleatorio(max,min){
+    return Math.floor(Math.random()*(max - min + 1 )) + min;
+}
+function generarCodigo(n){
+    let cadena = "";
+    for (var i = 0; i < n; i++) {
+        // cadena+= codigo[numeroAleatorio(0,codigo.length-1)];
+}
+return cadena;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
