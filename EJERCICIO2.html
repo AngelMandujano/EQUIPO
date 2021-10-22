@@ -1,0 +1,138 @@
+
+<script>
+    //VAREABLES
+
+var inicio = prompt("ingresa el numero de integrantes:(NUMERO MINIMO 2   NUMERO MAXIMO 5)");
+var nombres = {};
+var direccion = {};
+var participantes = ["PARTICIPANTE NUMERO 1","PARTICIPANTE NUMERO 2","PARTICIPANTE NUMERO 3","PARTICIPANTE NUMERO 4","PARTICIPANTE NUMERO 5"];
+
+//SI SE CUMPLE  
+
+if (inicio == 2){
+    var n1 = primerParticipante();
+    var n2 = segundoParticipante();
+
+}
+if (inicio == 3){
+    var n1 = primerParticipante();
+    var n2 = segundoParticipante();
+    var n3 = tercerParticipnte();
+}
+if (inicio == 4){
+    var n1 = primerParticipante();
+    var n2 = segundoParticipante();
+    var n3 = tercerParticipnte();
+    var n4 = cuartoParticipante();
+}
+if (inicio == 5){
+    var n1 = primerParticipante();
+    var n2 = segundoParticipante();
+    var n3 = tercerParticipnte();
+    var n4 = cuartoParticipante();
+    var n5 = quintoParticipante();
+}
+
+ function primerParticipante(){
+    let participante1 = {
+        nombre:[nombre(),direcciones()]
+    }
+    }
+ function segundoParticipante(){
+    let participante1 = {
+        nombre:nombre(),
+        direccion:direcciones()
+    }
+    }
+function tercerParticipnte(){
+    let participante1 = {
+        nombre:nombre(),
+        direccion:direcciones()
+    }
+    }
+function cuartoParticipante(){
+    let participante1 = {
+        nombre:nombre(),
+        direccion:direcciones()
+    }
+    }
+ function quintoParticipante(){
+    let participante1 = {
+        nombre:nombre(),
+        direccion:direcciones()
+    }
+    }
+  
+    // RESULTADO
+
+    for (var i = 0; i < 1; i++) {
+    var humano = resultado();
+ 
+}
+    var x1 = prompt("si deseas saber el resultado de la rifa escribe: SI O NO"); 
+   if (x1 == "SI"){
+       console.log("HERES EL AFORTUNADO GANADOR DE UN VIAJE A CANCUN");
+      console.log(humano);
+   } 
+   if (x1 == "NO"){
+    console.log("GRACIAS POR PARTICIPAR");
+   } 
+   if (x1 == "si"){
+    console.log("HERES EL AFORTUNADO GANADOR DE UN VIAJE A CANCUN");
+      console.log(humano);
+   } 
+   if (x1 == "no"){
+    console.log("GRACIAS POR PARTICIPAR");
+   } 
+   
+    function resultado(){
+    let nombre = participantes[numeroAleatorio(0,participantes.length-1)];
+    let persona={
+    nombre:nombre,
+    }
+    return persona;
+    }
+    function numeroAleatorio(max,min){
+    return Math.floor(Math.random()*(max - min + 1 )) + min;
+    }
+
+    
+    //FUNCION PARA EL LLENADO DE INFORMACION 
+   
+    function nombre (){
+    var nombres = {};
+    var cont = {};
+    
+    for (var i = 0; i<= 0; i++ ){
+       var x = prompt("ingresa el nombre del participante:","");
+        nombres[1]= x; 
+        
+    }
+    for(var i = 0; i <= 0; i++){
+        cont += nombres[i] + "";
+    console.log(nombres);
+    }
+    
+   
+}
+// nombre();
+
+function direcciones (){
+    var direccion = {};
+    var cont = "";
+    
+    for (var i = 0; i<= 0; i++ ){
+       var x = prompt("ingresa la direccion del participante:","");
+        direccion[1]= x; 
+        console.log(direccion); 
+    }
+    for(var i = 0; i <= 0; i++){
+        cont += direccion[i] + "";
+   
+    }
+    
+  
+}
+
+
+</script>
