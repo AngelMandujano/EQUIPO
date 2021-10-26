@@ -1,0 +1,947 @@
+<script>
+
+
+//grupos para seleccionar
+function grupos(){
+    console.log("2121IS");
+    console.log("3121IM");
+    console.log("3131IM");
+    console.log("4121IS");
+}
+
+var grupos = prompt("Indica el grupo que quieres observar: 2121IS,3121IM,3131IM,4121IS");
+if (grupos == "2121IS"){
+    var n1 = grupo2121IS();
+}
+if (grupos == "3121IM"){
+    var n2 = grupo3121IM();
+}
+if (grupos == "3131IM"){
+    var n3 = grupo3131IM();
+}
+if (grupos == "4121IS"){
+    var n4 = grupo4121IS();
+}
+//CANTIDAD DE ALUMNOS POR GRUPO
+var alumnos = prompt("DESEAS SABER LA CANTIDAD DE ALUMNOS TOTALES:SI,NO");
+if (alumnos == "SI"){
+    console.log("ALUMNOS EXISTENTES (40)");
+}
+if (alumnos == "NO"){
+    console.log("CONTINUA CON LAS INSTRUCCIONES");
+}
+// if (alumnos == "3121IM"){
+//     console.log("ESTE SALON CUENTA CON 10 ALUMNOS");
+// }
+// if (alumnos == "3131IM"){
+//     console.log("ESTE SALON CUENTA CON 10 ALUMNOS");
+// }
+// if (alumnos == "4121IS"){
+//     console.log("ESTE SALON CUENTA CON 10 ALUMNOS");
+// }
+//CANTIDAD DE ALUMNOS POR SEXO
+var sexo = prompt("SI DESEAS SABER LA CANTIDAD DE ALUMNOS POR SEXO ESCIBRE:(FEMENINO)(MASCULINO)");
+if (sexo == "FEMENINO"){
+    console.log("19 ALUMNOS FEMENINOS EXISTETES");
+}
+if (sexo == "MASCULINO"){
+    console.log("21 ALUMNOS MASCULINOS EXISTENTES");
+}
+//MEDIA
+var media = prompt("SI DESEAS SABER LA MEDIA DE UN GRUPO ESCRIBE EL NOMBRE DEL GRUPO:SI DESEAS SABER LA MEDIA TODAL DE LOS GRUPOS SOLO ESCIRBE (TOTAL)");
+if (media == "2121IS"){
+    console.log("LA MODA DEL GRUPO ES (7.92)");
+}
+if (media == "4121IS"){
+    console.log("LA MODA DEL GRUPO ES (8.28)");
+}
+if (media == "3121IM"){
+    console.log("LA MODA DEL GRUPO ES (8.8)");
+}
+if (media == "3131IM"){
+    console.log("LA MODA DEL GRUPO ES (8.25)");
+}
+if (media == "TOTAL"){
+    console.log("LA MODA DEL GRUPO ES (8.31)");
+}
+
+//ALUMNO EN ESPECIFICO
+var especifico = prompt("Si deseas tener la informacion completa de un alumno escribe su (MATRICULA)");
+//grupo 2121IS
+
+if (especifico == "1321124112"){
+    console.log(diego2121IS());
+}
+if (especifico == "13211341122"){
+    console.log(alexis2121IS());
+}
+if (especifico == "1321124142"){
+    console.log(yeraldy2121IS ());
+}
+if (especifico == "1331124112"){
+    console.log( yojan2121IS ());
+}
+if (especifico == "1321125112"){
+    console.log(isai2121IS ());
+}
+if (especifico == "1321424112"){
+    console.log(kenya2121IS ());
+}
+if (especifico == "1321124212"){
+    console.log(angel2121IS ());
+}
+if (especifico == "1321125112"){
+    console.log(jose2121IS());
+}
+if (especifico == "1321124111"){
+    console.log(mayte2121IS ());
+}
+if (especifico == "1321164112"){
+    console.log( ameyali2121IS ());
+}
+//GRUPO 3131IM
+if (especifico == "12132348"){
+    console.log(Aldo3131IM());
+}
+if(especifico == "13224581"){
+    console.log(Daniel3131IM());
+}
+if(especifico =="12134081" ){
+    console.log(Brayan3131IM());
+}
+if(especifico == "15134081"){
+    console.log(Dania3131IM());
+}
+if(especifico == "13174081"){
+    console.log(Daniela3131IM());
+}
+if(especifico =="15308981" ){
+    console.log(Camila3131IM());
+}
+if(especifico == "59164081"){
+    console.log(Joel3131IM());
+}
+if(especifico == "2304081"){
+    console.log(Uriel3131IM());
+}
+if(especifico == "15135061"){
+    console.log(Denzel3131());
+}
+if(especifico =="60134081" ){
+    console.log(Aleydis3131IM());
+}
+//GRUPO 3121IM
+if (especifico == "1321124113"){
+
+console.log(gael3121IM());
+
+}
+if (especifico == "321129089"){
+
+console.log(jose3121IM());
+
+}
+if (especifico == "321121122"){
+
+console.log(pedro3121IM());
+
+}
+if (especifico == "321123344"){
+
+console.log(rodrigo3121IM());
+
+}
+if (especifico == "321129955"){
+
+console.log(karen3121IM());
+
+}
+if (especifico == "321123366"){
+
+console.log(alejandra3121IM());
+
+}
+if (especifico == "321123456"){
+
+console.log(vaitiare3121IM());
+
+}
+if (especifico == "321120099"){
+
+console.log(adriel3121IM());
+
+}
+if (especifico == "321122367"){
+
+console.log(yuliana3121IM());
+
+}
+if (especifico == "321122266"){
+
+console.log(luis3121IM());
+
+}
+//GRUPO 4121IS
+if(especifico == "1321124123"){
+   console.log(freddy4121IS());
+}
+
+if(especifico == "1321129872"){
+   console.log(mauricio4121IS());
+}
+if(especifico == "1321125683"){
+   console.log(ariel4121IS());
+}
+if(especifico == "1324569323"){
+   console.log(areli4121IS());
+}
+if(especifico == "1721145632"){
+   console.log(martha4121IS());
+}
+
+if(especifico == "1936278455"){
+   console.log(julia4121IS());
+}
+
+if(especifico == "1955693221"){
+   console.log(erika4121IS());
+}
+if(especifico == "1937782451"){
+   console.log(estefani4121IS());
+}
+if(especifico == "1836559865"){
+   console.log(viridiana4121IS());
+}
+
+if(especifico == "193456789"){
+   console.log(jessica4121IS());
+}
+//CONJUNTO DE ALUMNOS
+var alumnos = prompt("Escrbe la cantidad de alumnos de los cuales deseas obtener informacion:EJEMPLO(5)");
+if (alumnos == "2"){
+    console.log("Dos alumnos seleccionados");
+   console.log("FEMENINOS (2) MASCULINOS (O)");
+   console.log("8.4");
+}
+if (alumnos == "3"){
+    console.log("tres alumnos seleccionados");
+   console.log("FEMENINOS (2) MASCULINOS (3)");
+   console.log("LA MODA ES (7.1)");
+}
+if (alumnos == "4"){
+    console.log("cuatro alumnos seleccionados");
+   console.log("FEMENINOS (1) MASCULINOS (3)");
+   console.log("LA MODA ES (8.0)");
+}
+if (alumnos == "5"){
+    console.log("cinco alumnos seleccionados");
+   console.log("FEMENINOS (2) MASCULINOS (3)");
+   console.log("LA MODA ES (8.0)");
+}
+if (alumnos == "6"){
+    console.log("seis alumnos seleccionados");
+   console.log("FEMENINOS (1) MASCULINOS (5)");
+   console.log("LA MODA ES (7.5)");
+}
+if (alumnos == "7"){
+    console.log("siete alumnos seleccionados");
+   console.log("FEMENINOS (2) MASCULINOS (5)");
+   console.log("LA MODA ES (8.1)");
+}
+if (alumnos == "8"){
+    console.log("ocho alumnos seleccionados");
+   console.log("FEMENINOS (2) MASCULINOS (6)");
+   console.log("LA MODA ES (8.6)");
+}
+if (alumnos == "9"){
+    console.log("nueve alumnos seleccionados");
+   console.log("FEMENINOS (3) MASCULINOS (6)");
+   console.log(" LA MODA ES (8.6)");
+}
+if (alumnos == "10"){
+    console.log("diez alumnos seleccionados");
+   console.log("FEMENINOS (4) MASCULINOS (6)");
+   console.log("LA MODA ES (8.25)");
+}
+var grupos = prompt("Indica el grupo que quieres observar: 2121IS,3121IM,3131IM,4121IS");
+if (grupos == "2121IS"){
+    console.log(n1grupo2121IS());
+}
+if (grupos == "3121IM"){
+    console.log(n2grupo3121IM());
+}
+if (grupos == "3131IM"){
+    console.log(n3grupo3131IM());
+}
+if (grupos == "4121IS"){
+    console.log(n4grupo4121IS());
+}
+
+//GRUPO 2121IS
+function diego2121IS (){
+    var alumno1={
+    nombre:"Alarcon Martinez Juan Diego",
+    matricula:"1321124112",
+    grupo:"2121IS",
+    sexo:"Masculino",
+    calificacion:"8.5" 
+    
+};
+return alumno1;
+}
+
+//2
+function alexis2121IS (){
+    var alumno2={
+    nombre:"Vazques Avedaño Alexis",
+    matricula:"1321134112",
+    grupo:"2121IS",
+    sexo:"Masculino",
+    calificacion:"7.5" 
+    
+}
+return alumno2;
+}
+
+//3
+function yeraldy2121IS (){
+    var alumno3={
+    nombre:"Hernandez Tellez Yeraldy",
+    matricula:"1321124142",
+    grupo:"2121IS",
+    sexo:"Femenino",
+    calificacion:"9.3" 
+    
+}
+return alumno3;
+}
+//4
+function yojan2121IS (){
+    var alumno4={
+    nombre:"Barrera Carbajal Yojan",
+    matricula:"1331124112",
+    grupo:"2121IS",
+    sexo:"Masculino",
+    calificacion:"5.5" 
+    
+}
+return alumno4;
+}
+//5
+function isai2121IS (){
+    var alumno5={
+    nombre:"Lopez Zaragosa Isai",
+    matricula:"1321125112",
+    grupo:"2121IS",
+    sexo:"Masculino",
+    calificacion:"8.1" 
+    
+}
+return alumno5;
+}
+//6
+function kenya2121IS (){
+    var alumno6={
+    nombre:"Trujillo Merino Kenya",
+    matricula:"1321424112",
+    grupo:"2121IS",
+    sexo:"Femenino",
+    calificacion:"8.6" 
+    
+}
+return alumno6;
+}
+//7
+function angel2121IS (){
+    var alumno7={
+    nombre:"Vaca Islas Angel",
+    matricula:"1321124212",
+    grupo:"2121IS",
+    sexo:"Masculino",
+    calificacion:"7.3" 
+    
+}
+return alumno7;
+}
+//8
+function jose2121IS (){
+    var alumno8={
+    nombre:"Cruz Aldana Jose",
+    matricula:"1321125112",
+    grupo:"2121IS",
+    sexo:"Masculino",
+    calificacion:"5.6" 
+    
+}
+return alumno8;
+}
+//9
+function mayte2121IS (){
+    var alumno9={
+    nombre:"Gutierrez Fragoso Mayte",
+    matricula:"1321124111",
+    grupo:"2121IS",
+    sexo:"Femenino",
+    calificacion:"9.0" 
+    
+}
+return alumno9;
+}
+//10
+function ameyali2121IS (){
+    var alumno10={
+    nombre:"Mandujano Lopez Ameyali",
+    matricula:"1321164112",
+    grupo:"2121IS",
+    sexo:"Femenino",
+    calificacion:"9.8" 
+    
+}
+return alumno10;
+}
+//grupo 2121IS
+function grupo2121IS(){
+    
+    console.log("nombre:Alarcon Martinez Juan Diego");
+    console.log("matricula:1321124112");
+    console.log("nombre:Vazques Avedaño Alexis");
+    console.log("matricula:1321134112");
+    console.log("nombre:Hernandez Tellez Yeraldy");
+    console.log("matricula:1321124142");
+    console.log("nombre:Barrera Carbajal Yojan");
+    console.log("matricula:1331124112");
+    console.log("nombre:Lopez Zaragosa Isai");
+    console.log("matricula:1321125112");
+    console.log("nombre:Trujillo Merino Kenya");
+    console.log("matricula:1321424112");
+    console.log("nombre:Cruz Aldana Jose");
+    console.log("matricula:1321125112");
+    console.log("nombre:Gutierrez Fragoso Mayte");
+    console.log("matricula:1321124111");
+    console.log("nombre:Mandujano Lopez Ameyali");
+    console.log("matricula:1321164112");
+    
+
+}
+
+
+
+
+
+
+
+//GRUPO 3131IM
+
+function Aldo3131IM(){
+    var alumno1={
+        nombre: "Torres Garcia Aldo",
+        matricula: "12132348",
+        grupo:"3131IM",
+        sexo: "Masculino",
+        calificacion: "9.0",
+    }
+    return alumno1;
+}
+function Daniel3131IM(){
+    var alumno2={
+        nombre: "Garcia Ponce Diego",
+        matricula: "13224581",
+        grupo: "3131IM",
+        sexo: "Masculino",
+        calificacion: "7.5",
+    }
+    return alumno2;
+}
+function Brayan3131IM(){
+    var alumno3={
+        nombre: "Plata Flores Brayan",
+        matricula: "12134081",
+        grupo: "3131IM",
+        sexo: "Masculino",
+        calificacion: "7.0",
+    }
+    return allumno3;
+}
+function Dania3131IM(){
+    var alumna4={
+        nombre: "Garcia Cantillo Dania",
+        matricula: "15134081",
+        grupo: "3131IM",
+        sexo: "Femenino",
+        calificacion: "9.0",
+    }
+    return alumna4;
+}
+function Daniela3131IM(){
+    var alumna5={
+               
+    }
+    return alumna5;
+}
+function Camila3131IM(){
+    var alumna6={
+        nombre: "Villegas Minero Camila",
+        matricula: "15308981",
+        grupo: "3131IM",
+        sexo: "Femenino",
+        calificacion: "10",
+    }
+    return alumna6;
+}
+function Joel3131IM(){
+    var alumno7={
+        nombre: "Zacarias Cantillo Joel",
+        matricula: "59164081",
+        grupo: "3131IM",
+        sexo: "Masculino",
+        calificacion: "8.0",
+    }
+    return alumno7;
+}
+function Uriel3131IM(){
+    var alumno8={
+        nombre: "Ruiz Torres Uriel",
+        matricula: "2304081",
+        grupo: "3131IM",
+        sexo: "Masculino",
+        calificacion: "7.0",
+    }
+    return alumno8;
+}
+function Denzel3131(){
+    var alumno9={
+        nombre: "Ramos Ayala Denzel",
+        matricula: "15135061",
+        grupo: "3131IM",
+        sexo: "Masculino",
+        calificacion: "9.0",
+    }
+    return alumno9;
+}
+function Aleydis3131IM(){
+    var alumna10={
+        nombre: "Garcia Olvera Aleydis",
+        matricula: "60134081",
+        grupo: "3131IM",
+        sexo: "Femenino",
+        calificacion: "10",
+    }
+    return alumna10;
+}
+function grupo3131IM(){
+    console.log("nombre:Torres Garcia Aldo");
+    console.log("matricula:12132348");
+    console.log("nombre:Ponce Diego");
+    console.log("matricula:13224581");
+    console.log("nombre:Plata Flores Brayan");
+    console.log("matricula:12134081")
+    console.log("nombre:Garcia Cantillo Dania");
+    console.log("matricula:15134081");
+    console.log("nombre:Villegas Flores Daniela" );
+    console.log("matricula:13174081");
+    console.log("nombre:Villegas Minero Camila");
+    console.log("matricula:15308981" );
+    console.log("nombre:Zacarias Cantillo Joel");
+    console.log("matricula:59164081");
+    console.log("nombre:Ruiz Torres Uriel");
+    console.log("matricula:2304081");
+    console.log("nombre:Ramos Ayala Denzel");
+    console.log("matricula:15135061");
+    console.log("nombre:Garcia Olvera Aleydis");
+    console.log("matricula:60134081");
+}
+//GRUPO 3121IM
+function gael3121IM (){
+    let alumno1={
+        nombre:"Barrera Macias Gael",
+        matricula:"1321124113",
+        grupo:"3121IM",
+        sexo: "Masculino",
+        calificacion: "8.9",
+
+    }
+return alumno1;     
+}
+function jose3121IM (){
+    let alumno2={
+        nombre:"Vazques Bello Jose de Jesus",
+        matricula:"321129089", 
+        grupo: "3121IM",
+        sexo: "Masculino",
+        calificacion: "7.9",
+
+    }
+return alumno2;     
+}
+function pedro3121IM (){
+    let alumno3={
+        nombre:"Barrios Mendoza Pedro",
+        matricula:"321121122",
+        grupo:"3121IM",
+        sexo: "Masculino",
+        calificacion: "10",
+
+    }
+return alumno3;     
+}
+function rodrigo3121IM (){
+    let alumno4={
+        nombre:"Barrera Macias Rodrigo",
+        matricula:"321123344",
+        grupo:"3121IM",
+        sexo: "Masculino",
+        calificacion: "6.7",
+
+    }
+return alumno4;     
+}
+function karen3121IM (){
+    let alumno5={
+        nombre: "Sanches Vazques Karen", 
+        matricula:"321129955",
+        grupo:"3121IM",
+        sexo:"femenino",
+        calificacion: "10",
+
+    }
+return alumno5;     
+}
+function yuliana3121IM (){
+    let alumno6={
+        nombre: "Vera Arias Yuliana", 
+        matricula:"321122367",
+        grupo:"3121IM",
+        sexo: "femenino",
+        calificacion:"9.8", 
+
+    }
+return alumno6;     
+}
+function alejandra3121IM (){
+    let alumno7={
+        nombre:"Macias Franco Alejandro",
+        matricula:"321123366",
+        grupo:"3121IM",
+        sexo:"masculino",
+        calificacion:"9.1", 
+
+    }
+return alumno7;     
+}
+function vaitiare3121IM (){
+    let alumno8={
+        nombre:"Matinez Gonzales Vaitiare",
+        matricula:"321123456",
+        grupo:"3121IM",
+        sexo:"Femenino", 
+        calificacion:"8.8", 
+
+    }
+return alumno8;     
+}
+function adriel3121IM (){
+    let alumno9={
+        nombre:"Mendez Benites Adriel",
+        matricula: "321120099",
+        grupo:"3121IM",
+        sexo:"masculino",
+        calificacion: "6.8",
+
+    }
+return alumno9;     
+}
+function luis3121IM (){
+    let alumno10={
+        nombre:"Gallego Basteri Luis Miguel",
+        matricula:"321122266",
+        grupo:"3121IM",
+        sexo:"masculino",
+        calificacion: "10",
+
+    }
+return alumno10;     
+}
+function grupo3121IM(){
+console.log("Barrera Macias Gael");
+console.log("matricula:1321124113");
+console.log("Vazques Bello Jose de Jesus");
+console.log("matricula:321129089");
+console.log("Barrios Mendoza Pedro");
+console.log("matricula:321121122");
+console.log("Barrera Macias Rodrigo");
+console.log("matricula:321123344");
+console.log("Sanches Vazques Karen");
+console.log("matricula:321129955");
+console.log("Macias Franco Alejandro");
+console.log("matricula:321123366");
+console.log("Matinez Gonzales Vaitiare");
+console.log("matricula:321123456");
+console.log("Mendez Benites Adriel");
+console.log("matricula:321120099");
+console.log("Gallego Basteri Luis Miguel");
+console.log("matricula:321122266");
+}
+//GRUPO 4121IS
+function freddy4121IS () {
+   let alumno1={
+   nombre:"Gonzalez Luna Freddy Daniel",
+   matricula:"1321124123",
+   grupo:"4121IS",
+   sexo:"Masculino",
+   calificacion:"9.2",
+
+
+}
+return alumno1;
+}
+
+
+function mauricio4121IS () {
+   let alumno2={
+   nombre:"Luna Espejo Mauricio",
+   matricula:"1321129872",
+   grupo:"4121IS",
+   sexo:"Masculino",
+   calificacion:"6.2",
+
+
+}
+return alumno2;
+} 
+
+//3
+function ariel4121IS () {
+   let alumno3={
+   nombre:"Gonzalez Catellanos Ariel",
+   matricula:"1321125683",
+   grupo:"4121IS",
+   sexo:"Masculino",
+   calificacion:"8.5",
+
+
+}
+return alumno3;
+}
+
+//4
+function areli4121IS () {
+   let alumno4={
+   nombre:"Alvarado Garcia Areli",
+   matricula:"1324569323",
+   grupo:"4121IS",
+   sexo:"Femenino",
+   calificacion:"7.9",
+
+
+}
+return alumno4;
+}
+
+//5
+function martha4121IS () {
+   let alumno5={
+   nombre:"Rubin Alpizar Martha",
+   matricula:"1721145632",
+   grupo:"4121IS",
+   sexo:"femenino",
+   calificacion:"7.5",
+
+
+}
+return alumno5;
+}
+
+//6
+function julia4121IS () {
+   let alumno6={
+   nombre:"Castellanos Telles Julia",
+   matricula:"1936278455",
+   grupo:"4121IS",
+   sexo:"femenino",
+   calificacion:"8.6",
+
+
+}
+return alumno6;
+}
+
+//7
+function erika4121IS () {
+   let alumno7={
+   nombre:"Avedaño Martinez Erika",
+   matricula:"1955693221",
+   grupo:"4121IS",
+   sexo:"femenino",
+   calificacion:"7.6",
+
+
+}
+return alumno7;
+}
+
+//8
+function estefani4121IS () {
+   let alumno8={
+   nombre:"Hernandez Rodriguez Estefani",
+   matricula:"1937782451",
+   grupo:"4121IS",
+   sexo:"femenino",
+   calificacion:"8.3",
+
+
+}
+return alumno8;
+}
+
+//9
+function viridiana4121IS () {
+   let alumno9={
+   nombre:"Barron Ramos Viridiana",
+   matricula:"1836559865",
+   grupo:"4121IS",
+   sexo:"femenino",
+   calificacion:"9.9",
+
+
+}
+return alumno9;
+}
+
+//10
+function jessica4121IS () {
+   let alumno10={
+   nombre:"Robles Aledaño Jessica",
+   matricula:"193456789",
+   grupo:"4121IS",
+   sexo:"femenino",
+   calificacion:"9.1",
+
+
+}
+return alumno10;
+}
+
+function grupo4121IS(){
+
+//1
+  console.log("Nombre:Gonzalez Luna Freddy Daniel");
+  console.log("Matricula:1321124123");
+
+//2
+  console.log("Nombre:Luna Espejo Mauricio");
+  console.log("Matricula:1321129872");
+
+//3
+  console.log("Nombre:Gonzalez Catellanos Ariel");
+  console.log("Matricula:1321125683");
+
+//4
+  console.log("Nombre:Alvarado Garcia Areli");
+  console.log("Matricula:1324569323");
+
+//5
+  console.log("Nombre:Rubin Alpizar Martha");
+  console.log("Matricula:1721145632");
+
+//6
+  console.log("Nombre:Castellanos Telles Julia");
+  console.log("Matricula:1936278455");
+
+//7
+  console.log("Nombre:Avedaño Martinez Erika");
+  console.log("Matricula:1955693221");
+
+//8
+  console.log("Nombre:Hernandez Rodriguez Estefani");
+  console.log("Matricula:1937782451");
+
+//9
+  console.log("Nombre:Barron Ramos Viridiana");
+  console.log("Matricula:1836559865");
+
+//10
+  console.log("Nombre:Robles Aledaño Jessica");
+  console.log("Matricula:193456789");
+}
+//N1GRUPO2121IS
+function n1grupo2121IS (){
+    console.log("TOTAL DE INTEGRANTES (10)");
+    console.log("MASCULINOS (6) FEMENINO (4)");
+    console.log("MODA DEL GRUPO (7.92)");
+    console.log(diego2121IS ());
+    console.log(alexis2121IS ());
+    console.log(yeraldy2121IS ());
+    console.log(yojan2121IS ());
+    console.log(isai2121IS ());
+    console.log(kenya2121IS ());
+    console.log( angel2121IS ());
+    console.log(jose2121IS ());
+    console.log(mayte2121IS ());
+    console.log(ameyali2121IS ());
+}
+//N2GRUPO3131IM
+function n3grupo3131IM(){
+    console.log("TOTAL DE INTEGRANTES (10)");
+    console.log("MASCULINOS (6) FEMENINO (4)");
+    console.log("MODA DEL GRUPO (8.25)");
+    console.log(Aldo3131IM());
+    console.log(Daniel3131IM());
+    console.log(Brayan3131IM());
+    console.log(Dania3131IM());
+    console.log(Daniela3131IM());
+    console.log(Camila3131IM());
+    console.log(Joel3131IM());
+    console.log(Uriel3131IM());
+    console.log(Denzel3131());
+    console.log(Aleydis3131IM());
+}
+//N3GRUPO4121IS
+function n4grupo4121IS(){
+console.log("TOTAL DE INTEGRANTES (10)");
+console.log("MASCULINOS (4) FEMENINO (6)");
+console.log("MODA DEL GRUPO (8.28)");
+console.log(freddy4121IS());
+console.log(mauricio4121IS());
+console.log(ariel4121IS());
+console.log(areli4121IS());
+console.log(martha4121IS());
+console.log(julia4121IS());
+console.log(erika4121IS());
+console.log(estefani4121IS());
+console.log(viridiana4121IS());
+console.log(jessica4121IS());
+}
+//N4GRUPO3121IM
+function n2grupo3121IM(){
+console.log("TOTAL DE INTEGRANTES (10)");
+console.log("MASCULINOS (6) FEMENINO (4)");
+console.log("MODA DEL GRUPO (8.8)");
+console.log(gael3121IM()),
+console.log(jose3121IM());
+console.log(pedro3121IM());
+console.log(rodrigo3121IM());
+console.log(karen3121IM());
+console.log(alejandra3121IM());
+console.log(vaitiare3121IM());
+console.log(yuliana3121IM());
+console.log(adriel3121IM());
+console.log(luis3121IM());
+
+}
+var fin = prompt("SALIR","SALIR");
+if(fin == "SALIR"){
+    console.log("FIN DE LOS RESULTADOS");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
